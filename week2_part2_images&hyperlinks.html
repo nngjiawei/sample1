@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Week2: Images & Hyperlinks</title>
+
+        <link rel="icon" type="image/png" href="../../图片/background/deemo1.png" />
+      
+        <!--Extra icon use-->
+        <!--Link to Font Awesome CDN -Content Delivery Network-->
+        <script src="https://kit.fontawesome.com/509aef3ced.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1>Week 2 Part 2: Images & Hyperlinks</h1>
+            <h2>Navigator</h2>
+            <nav>
+                <uL>
+                    <li><a href = "week2_part1_html5_semantic&template.html">Part 1: Semantic & Templates</a></li>
+                    <li><a href = "week2_part3_multimedia&tables&useful_tag.html">Part3: Multimedia & tables & Useful_tags</a></li>
+                    <li><a href = "#Images">Images</a></li>
+                    <li><a href = "#Hyperlinks">Hyperlinks</a></li>
+                </uL>
+            </nav>
+        </header>
+        <main>
+            <!--Image-->
+            <div id = "Images">
+                <h1>Images</h1>
+                <h2>favicon: write code in &lt;head&gt;, image must be special icon image or .png(not .jpg/.gif)</h2>
+            
+                <figure>
+                    <img src = "../../图片/background/deemo1.png"  alt = "deemo_unseen" >
+                    <figcaption>Deemo on default size</figcaption>
+                </figure>
+            
+                <figure>
+                    <img src = "../../图片/background/deemo1.png" width = "500px" alt = "" >
+                    <figcaption>Deemo on 500px width(browser automatic adjust by comparing to width)</figcaption>
+                </figure>
+
+                <figure>
+                    <img src = "../../图片/background/deemo1.png" width = "500px" height = "100px" alt= "deemo_unseen">
+                    <figcaption>Deemo on 500px width & 100px height</figcaption>
+                </figure>
+             
+                <h2>(fixed width and height is not recommended)(在一個屏幕觀感適合不代表在其他更大/更小的屏幕觀感適合(會出現在電腦看圖片舒服，電話看圖片太大的現象))</h2>
+            
+                <figure>
+                    <img src = "../../图片/background/deemo1.png" width = "50%" alt = "deemo_unseen" >
+                    <figcaption>Deemo on 50% width (of window)(佔window 50% width 的大小)(會隨著window的縮放而改變大小)(recommended)</figcaption>
+                </figure>
+
+                <h2>Extra icon use in Font Awesome(Find icon in Font Awesome)</h2>
+                <i class="fa-solid fa-face-angry"></i>
+                <i class="fa-solid fa-face-angry fa-xs"></i>
+                <i class="fa-solid fa-face-angry fa-md"></i>
+                <i class="fa-solid fa-face-angry fa-lg"></i>
+                <i class="fa-solid fa-face-angry fa-2x"></i>
+                <i class="fa-solid fa-face-angry fa-3x"></i>
+                <i class="fa-solid fa-face-angry fa-5x"></i>
+                <i class="fa-solid fa-face-angry fa-10x"></i>
+                <br>
+                <h3>icon with hyperlink(icon with hyperlink are blue)</h3>
+                <a href = "http://www.facebook.com" aria-label="facebook"><i class="fa-brands fa-facebook fa-5x"></i></a>
+                <a href = "http://www.youtube.com" aria-label="youtube"><i class="fa-brands fa-youtube fa-5x"></i></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--hyperlinks-->
+            <div id = "Hyperlinks">
+                <h1>Hyperlinks</h1>
+                <h2>Absolute links</h2>
+                <a href = "https://www.nuk.edu.tw/">國立高雄大學</a>
+                <br>
+                <a href = "https://www.nuk.edu.tw/"><img src = "picture/國立高雄大學.png" alt="國立高雄大sss學" width="200px"/></a>
+            
+                <a href = "https://www.nuk.edu.tw/"><img src = "https://www.nuk.edu.tw/var/file/0/1000/img/147/logo.png" alt="國立高雄大sss學" width="200px"/></a>
+                <br>
+                <h2>Relative links</h2>
+                <a href = "week2_part1_html5_semantic&template.html">Semantic & Template</a>
+                <br><br>
+                <h2>Internal links</h2>
+                <!--ID tag-->
+                <!-- use with <div id = "..."> -->
+                <a href = "#Images">Images</a><br>
+                <a href = "#Hyperlinks">Hyperlinks</a>
+
+                <!--target-->
+                <h2>target</h2>
+                <h4>以國立高雄大學網址爲例</h4>
+                <a href = "https://www.nuk.edu.tw/" target ="_self">Open in the same tab/window </a><br>
+                <a href = "https://www.nuk.edu.tw/" target="_blank">Open in the another tab/window </a><br>
+                <!--_parent== 開在parent frame && _top == 開在top frame-->
+
+            </div>
+            
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
