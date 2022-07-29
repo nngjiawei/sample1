@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>week2: Multimedia & tables & useful_tag</title>
+
+    </head>
+    <body>
+        <header>
+            <h1>Week 2 Part 3: Multimedia & tables & useful_tag</h1>
+            <h2>Navigator</h2>
+            <nav>
+                <ul>
+                    <li><a href = "week2_part1_html5_semantic&template.html">Part 1: Semantic & Templates</a></li>
+                    <li><a href = "week2_part2_images&hyperlinks.html">Part 2: Images & Hyperlinks</a></li>
+                    <li><a href = "final_project1.html">Final_project 1</a></li>
+                    <li><a href = "#Multimedia">Multimedia</a></li>
+                    <li><a href = "#Tables">Tables</a></li>
+                    <li><a href = "#Useful_tags">Useful_tags</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <main>
+            <br><br>
+        <div id = "Multimedia">
+            <h1>Multimedia</h1>
+           
+            <h2>Video</h2>
+            <h3>Autoplay(Chrome cant only run autoplay, must run autoplay with muted)</h3>
+            <video src = "../../../Downloads/老虎.mp4" width = "400px" autoplay muted>
+                Your browser does not support the <code>video</code> element(autoplay).
+            </video>
+            <br>
+            
+            <h3>Controls</h3>
+            <video src = "../walking_tour_to_north_kauhsiong/TEAM6-吳嘉尉 林敬傑 黃如意 林銘智.mp4" width = "400px" controls>
+                Your browser does not support the <code>video</code> element(Control).
+            </video>
+            <br>
+            <h3>setting timer(play from 30 second to 70 second)</h3>
+            <video src = "../walking_tour_to_north_kauhsiong/TEAM6-吳嘉尉 林敬傑 黃如意 林銘智.mp4#t=30,70" width = "400px" controls>
+                Your browser does not support the <code>video</code> element(Control).
+            </video>
+            <br>
+            
+            <h3>Loop(Cant only run loop, must run loop with autoplay(with muted in chrome) or control)</h3>
+            <h5>ex: loop + controls</h5>
+            <video src = "../walking_tour_to_north_kauhsiong/TEAM6-吳嘉尉 林敬傑 黃如意 林銘智.mp4" width = "400px" loop controls>
+                Your browser does not support the <code>video</code> element(Loop).
+            </video>
+            <br>
+            
+            <h3>figure can also be used in video and audio(multimedia)</h3>
+            <h4>Extra: Autoplay + Muted + control + loop(可以重叠使用)</h4>
+            <figure>
+                <video src = "../walking_tour_to_north_kauhsiong/TEAM6-吳嘉尉 林敬傑 黃如意 林銘智.mp4" width = "400px"  autoplay muted controls loop>
+                    Your browser does not support the <code>video</code> element(utoplay + Muted + control + loop).
+                </video>
+                <figcaption>##Use figcaption to 為video做注解/介紹</figcaption>
+            </figure>
+            <br><br>
+
+            
+            <h2>Audio</h2>
+            <h3>usable attribute: autoplay?(new chrome block autoplay)(must use other ways) , controls , loop , muted , buffered? , volume? (also can setting timer)</h3>
+            <audio src ="Multimedia/Awake Now_OffVocal_Master.wav" controls>
+                Your browser doesnt support Awake now bgm(controls)
+            </audio>
+            <br>
+            <figure>
+                <audio src ="Multimedia/Awake Now_OffVocal_Master.wav #t=57,91" muted controls>
+                Your browser doesnt support Awake now bgm(setting timer + muted + controls)
+                </audio>
+                <figcaption>##Use figcaption to 為audio做注解/介紹</figcaption>
+            </figure>
+            <br>
+
+        </div>
+            
+        <div id = "Tables">
+            <h1>Tables</h1>
+            
+            <h3> th = Table Headings , tr =Table Rows , td = Table Columns</h3>
+            <table border = "2">                 <!--  border: 讓你的table有邊綫(border)   -->
+                <tr> <th>Column 1</th> <th>Column 2</th> <th>Column3</th> </tr>   <!-- th,td in tr-->
+                
+                <tr> <td>One</td> <td>Two</td> <td>Three</td> </tr>
+                
+                <tr> <td>Four</td> <td>Five</td> <td>Six</td> </tr>
+                
+                <tr> <td>Seven</td> <td>Eight</td> <td>Nine</td> </tr>
+            </table>
+            
+            <h3>rowspan(row expand) & colspan(column expand)</h3>
+            <table border = "1">   
+                <tr>
+                    <th>Child's Name:  </th><th>Parent's Name:  </th>
+                </tr>
+                <tr>
+                    <td rowspan = "2">Catherine</td><td>Michael McCarthy</td>
+                </tr>
+               
+                <tr><td>Colleen McCarthy</td></tr>
+               
+                <tr>
+                    <td colspan = "2">Maggie</td><td>Sheila McGee</td>
+                </tr>
+                <tr>
+                    <td rowspan = "2">Edaward</td><td>Catherine Howard</td>
+                </tr>
+                <tr>
+                   <td colspan = "2">Jeff Howard</td>
+                </tr>
+            </table>
+
+            <h3>caption(link text&title to table)(above the table)</h3>
+            <table border = "3">
+                <caption>Mothergoose<br>鵝媽媽童謠</caption>
+                
+                <tr><th>Column 1</th><th>Column 2</th><th>Column3</th></tr>
+                
+                <tr><td>One</td><td>Two</td><td>Three</td></tr>
+                
+                <tr><td>Four</td><td>Five</td><td>Six</td></tr>
+                
+                <tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+            </table>
+            
+        </div>
+
+        <div id = "Useful_tags">
+                <h1>Useful_tags</h1>
+                
+                <h2>Block_tags</h2>
+                
+
+                <h3>hr</h3>
+                    <h4>horizontal line , used as "semantic break". Using it often to break up example files when displaying multiple tags in one files</h4>
+                <hr>
+                
+
+                <h3>address(Use for contact imformation for the author)</h3>
+                    <address>22,Jalan Palma Nibong 3,<br>Taman Dato Chellam</address>
+                <hr>
+                
+
+                <h3>blockquote(used for extension quotations引文)</h3>
+                    <h4>It should include the cite attribute in order to show or link to the source of the quote</h4>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+                    </blockquote>
+                <hr>
+                
+
+                <h3>details(not supported by all of the browsers yet)</h3>
+                    <details>
+                        <summary>Epcot Center</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+                <hr>
+               
+                
+                <h2>Inline_tags</h2>
+                
+
+                <h3>cite (made the word italic)(use for name or website)</h3>
+                    <p>You can go hololive website at <cite><a href = "https://en.hololive.tv/" target = "_blank">https://en.hololive.tv/</a></cite></p>
+                <hr>
+                
+
+                <h3>abbreviations -abbr</h3>
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was found in 1948.</p>            
+                <hr>
+               
+
+                <h3>time</h3>
+                    <h4>The time tag defines a specific time (or datetime).<br>
+                        The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.</h4>
+                    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday</p>
+                    <p>I have a date on <time datetime= "2008-02-14 20:00">Valentines day</time></p>
+                <hr>
+                
+
+                <h3>code</h3>
+                    <h4>The code tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.<br>
+                        Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS
+                    </h4>
+                    <p>The HTML <code>button</code> tg defines a clickable button.</p>
+                    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+                <hr>
+
+
+                <h3>sub(subscripts)(下) and sup(superscripts)(上)</h3>
+                    <h4>Often used for mathematical or chemical formula</h4>
+                    <p>Example: (x+y)<sup>3</sup> , CaSO<sub>4</sub></p>
+                <hr>
+
+
+
+                <h2>Other tags(incorporated with css & Javascript)</h2>
+                
+
+                <h3>button</h3>
+                    <button type = "button">Click Me!</button>
+                <hr>
+
+
+                <h3>meter</h3>
+                    <p>The meter element is used to display a gauge:</p>
+
+                    <label for="disk_c">Disk usage C:</label>
+                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+                    <hr>
+                    <label for="disk_d">Disk usage D:</label>
+                    <meter id="disk_d" value="0.6">60%</meter>
+                <hr>
+
+
+                <h3>progress</h3>
+                    <label for ="file">Downloading progress:</label>
+                    <progress id = "file" value = "32" max = "100">32%</progress>
+                <hr>
+
+
+                <h3>Iframe</h3>
+                    <figure>
+                        <iframe src = "https://www.youtube.com/embed/liJVSwOiiwg" title = "How to find youtube video id(used to embed youtube video to your html)"></iframe>
+                        <figcaption>This video tell you how to get Youtube video ID (used to embed youtube video to your html)</figcaption>
+                    </figure>
+                    <hr>
+                    
+                    <p>iframe(default size)</p>
+                    <iframe src = "https://www.youtube.com/embed/EEbWRjavSVw" title="Youtube" ></iframe>
+                    <br>  
+                    
+                    <p>iframe(width = "1200px" height = "400px")</p>
+                    <figure>
+                        <iframe src = "https://www.youtube.com/embed/EEbWRjavSVw"  title = "Youtube" width = "1200px" height = "400px"></iframe>
+                        <figcaption>Youtube Ayase</figcaption>
+                    </figure>
+                <hr>
+
+
+                <h3>bdo(bidirectional overide)</h3>
+                    <h4>Can be used to change direction of the text</h4>
+                    <p>text go left to right(ltr):</p>
+                    <p><bdo dir = "ltr">MinatoAqua</bdo></p>
+                    <p>text go right to left(rtl):</p>
+                    <p><bdo dir = "rtl">MinatoAqua</bdo></p>
+            
+            
+        </div>
+        
+        </main>
+    </body>    
+</html>
